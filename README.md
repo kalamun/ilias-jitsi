@@ -1,10 +1,8 @@
-This is an OpenSource project by studer + raimann ag, CH-Burgdorf (https://studer-raimann.ch)
-
-## Description
-See in [doc/DESCRIPTION.md](./doc/DESCRIPTION.md)
+This is the Jitsi plugin for ILIAS LMS (ilias.de).
+The plugin, developed by Kalamun (https://kalamun.net) is based on the open-source project by studer + raimann ag, CH-Burgdorf (https://studer-raimann.ch)
 
 ## Documentation
-See in [doc/DOCUMENTATION.md](./doc/DOCUMENTATION.md)
+French manual: https://docs.google.com/document/d/e/2PACX-1vQwY1qLxyfYcwUzVKFtQ-fLRvPa6mVem34z-L2xyaXacNdrERBNdPQdE7jUx8K0E19nbaVTdLOyKAnN/pub
 
 ## Installation
 
@@ -18,19 +16,8 @@ git clone https://github.com/studer-raimann/Jitsi.git Jitsi
 Update, activate and config the plugin in the ILIAS Plugin Administration
 
 ### Requirements
-* ILIAS 5.4
-* PHP >=7.0
+* ILIAS >= 7.0
+* PHP >= 7.0
 
-### Adjustment suggestions
-* External users can report suggestions and bugs at https://plugins.studer-raimann.ch/goto.php?target=uihk_srsu_PLJITSI
-* Adjustment suggestions by pull requests via github
-* Customer of studer + raimann ag: 
-	* Adjustment suggestions which are not yet worked out in detail by Jira tasks under https://jira.studer-raimann.ch/projects/PLJITSI
-	* Bug reports under https://jira.studer-raimann.ch/projects/PLJITSI
-
-### ILIAS Plugin SLA
-Wir lieben und leben die Philosophie von Open Source Software! Die meisten unserer Entwicklungen, welche wir im Kundenauftrag oder in Eigenleistung entwickeln, stellen wir öffentlich allen Interessierten kostenlos unter https://github.com/studer-raimann zur Verfügung.
-
-Setzen Sie eines unserer Plugins professionell ein? Sichern Sie sich mittels SLA die termingerechte Verfügbarkeit dieses Plugins auch für die kommenden ILIAS Versionen. Informieren Sie sich hierzu unter https://studer-raimann.ch/produkte/ilias-plugins/plugin-sla.
-
-Bitte beachten Sie, dass wir nur Institutionen, welche ein SLA abschliessen Unterstützung und Release-Pflege garantieren.
+### Support
+* Bug reports and feature requests: open a ticket in https://github.com/kalamun/ilias-jitsi/issues
