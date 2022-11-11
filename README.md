@@ -2,7 +2,7 @@ This is the Jitsi plugin for ILIAS LMS (ilias.de).
 The plugin, developed by Kalamun (https://kalamun.net) is based on the open-source project by studer + raimann ag, CH-Burgdorf (https://studer-raimann.ch)
 
 ## Documentation
-French manual: https://docs.google.com/document/d/1vbP45-htSkom913KXbkgbvoORvMp61JKCeLoeSwCsBI/edit?usp=sharing
+French manual: https://docs.google.com/document/d/e/2PACX-1vQwY1qLxyfYcwUzVKFtQ-fLRvPa6mVem34z-L2xyaXacNdrERBNdPQdE7jUx8K0E19nbaVTdLOyKAnN/pub
 
 ## Installation
 
