@@ -1,0 +1,17 @@
+<div class="jitsi_menu">
+	{MENU}
+</div>
+<div id="jitsi_meeting"></div>
+<script src='{JITSI_DOMAIN_SCHEMA}://{JITSI_DOMAIN}/external_api.js'></script>
+<script src='./Customizing/global/plugins/Services/Repository/RepositoryObject/Jitsi/js/jits.js'></script>
+<script>
+	il.Jitsi.init('{JITSI_SETTINGS}');
+</script>
+
+<style>
+body #jitsi_meeting iframe {
+	aspect-ratio: 16/9;
+	width: 100% !important;
+	height: auto !important;
+}
+</style>
