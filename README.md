@@ -11,7 +11,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/Repository/RepositoryObject
 cd Customizing/global/plugins/Services/Repository/RepositoryObject
-git clone https://github.com/studer-raimann/Jitsi.git Jitsi
+git clone https://github.com/kalamun/ilias-jitsi.git Jitsi
 ```
 Update, activate and config the plugin in the ILIAS Plugin Administration
 
