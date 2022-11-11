@@ -68,7 +68,6 @@ var il;
         }
         Jitsi.api = api;
         function init(base_configuration) {
-            console.log(base_configuration);
             base_configuration = JSON.parse(base_configuration);
             console.log(base_configuration);
             var domain = base_configuration['domain'];

@@ -12,6 +12,7 @@ class Base extends AbstractJasonable
     public $password = '';
     public $domain = '';
     public $height = 800;
+    public $defaultLanguage = 'fr';
     public $parentNode;
     public $configOverwrite;
     public $interfaceConfigOverwrite;
@@ -26,12 +27,15 @@ class Base extends AbstractJasonable
      */
     public function __construct(string $domain, string $room_id, int $height)
     {
+        global $DIC;
         $this->domain                   = $domain;
         $this->parentNode               = '#jitsi_meeting';
         $this->roomId                   = $room_id;
         $this->roomName                 = $room_id;
         $this->height                   = $height;
+        $this->defaultLanguage          = $DIC->language()->getLangKey();
         $this->configOverwrite          = new ConfigOverwrite();
+        $this->configOverwrite->defaultLanguage = $DIC->language()->getLangKey();
         $this->interfaceConfigOverwrite = new InterfaceConfigOverwrite();
         $this->participant              = new Participant();
     }

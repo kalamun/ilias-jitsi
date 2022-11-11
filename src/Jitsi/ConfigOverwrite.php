@@ -15,7 +15,7 @@ class ConfigOverwrite extends AbstractJasonable
     public $enableWelcomePage = false;
     public $enableClosePage = false;
     public $prejoinPageEnabled = true;
-    public $defaultLanguage = 'de';
+    public $defaultLanguage = 'en';
     public $disableRemoteMute = false;
     public $analytics = [];
 }

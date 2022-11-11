@@ -1,0 +1,29 @@
+obj_xjit#:#Jitsi VC
+obj_xjit_duplicate#:#Copier Jitsi VC
+objs_xjit#:#Jitsi VCs
+objs_xjit_duplicate#:#Copie de Jitsi
+rbac_create_xjit#:#Créer Jitsi VC
+xjit_add#:#Ajouter
+xjit_delete#:#Supprimer
+xjit_edit_permission#:#Modifier l'autorisation
+xjit_new#:#Créer Jitsi
+xjit_read#:#Lire
+xjit_visible#:#visible
+xjit_write#:#Modifier
+config_configuration#:#Configuration
+config_configuration_saved#:#Configuration enregitrée
+config_save#:#Enregistrer
+object_manage_contents#:#Modifier
+object_offline#:#Hors ligne
+object_permission_denied#:#Permission refusée
+object_show_contents#:#Contenu
+object_status#:#Status
+settings_cancel#:#Annuler
+settings_description#:#Description
+settings_online#:#En ligne
+settings_save#:#Enregistrer
+settings_saved#:#Paramètres sauvegardés
+settings_settings#:#Préferences
+settings_title#:#Title
+config_jitsi_url#:#Adresse Jitsi
+config_open_in_tab#:#Ouvrir dans un nouvel onglet
