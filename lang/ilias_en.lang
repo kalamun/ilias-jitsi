@@ -1,8 +1,8 @@
-obj_xjit#:#Jitsi VC
-obj_xjit_duplicate#:#Copy Jitsi VC
-objs_xjit#:#Jitsi VC's
+obj_xjit#:#Jitsi videocall
+obj_xjit_duplicate#:#Copy Jitsi videocall
+objs_xjit#:#Jitsi videocall's
 objs_xjit_duplicate#:#Copy Jitsi's
-rbac_create_xjit#:#Create Jitsi VC
+rbac_create_xjit#:#Create a Jitsi videocall
 xjit_add#:#Add
 xjit_delete#:#Delete
 xjit_edit_permission#:#Edit permission

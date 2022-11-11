@@ -1,11 +1,11 @@
-obj_xjit#:#Jitsi VC
-obj_xjit_duplicate#:#Copia Jitsi VC
-objs_xjit#:#Jitsi VC
+obj_xjit#:#Videoconferenza Jitsi
+obj_xjit_duplicate#:#Copia la videoconferenza Jitsi
+objs_xjit#:#Videoconferenze Jitsi
 objs_xjit_duplicate#:#Copia di Jitsi
-rbac_create_xjit#:#Crea Jitsi VC
+rbac_create_xjit#:#Crea una videoconferenza Jitsi
 xjit_add#:#Aggiungi
 xjit_delete#:#Rimuovi
-xjit_edit_permission#:#Modifica l'autorisation
+xjit_edit_permission#:#Modifica i permessi
 xjit_new#:#Crea un nuovo Jitsi
 xjit_read#:#Leggi
 xjit_visible#:#visibile

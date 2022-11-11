@@ -1,12 +1,12 @@
-obj_xjit#:#Jitsi VC
-obj_xjit_duplicate#:#Copier Jitsi VC
-objs_xjit#:#Jitsi VCs
-objs_xjit_duplicate#:#Copie de Jitsi
-rbac_create_xjit#:#Créer Jitsi VC
+obj_xjit#:#Vidéoconférence Jitsi
+obj_xjit_duplicate#:#Copier Vidéoconférence Jitsi
+objs_xjit#:#Vidéoconférences Jitsi
+objs_xjit_duplicate#:#Copie de Vidéoconférence Jitsi
+rbac_create_xjit#:#Créer Vidéoconférence Jitsi
 xjit_add#:#Ajouter
 xjit_delete#:#Supprimer
 xjit_edit_permission#:#Modifier l'autorisation
-xjit_new#:#Créer Jitsi
+xjit_new#:#Créer Vidéoconférence Jitsi
 xjit_read#:#Lire
 xjit_visible#:#visible
 xjit_write#:#Modifier
