@@ -168,7 +168,8 @@ class ilObjJitsiGUI extends ilObjectPluginGUI
         $tpl->setVariable('MENU', ''); // Currently no menu
 
         // Domain
-        $uri_from_config = self::jitsi()->config()->getValue(ConfigFormGUI::JITSI_URL) ?? 'https://meet.jit.si/';
+        $uri_from_config = self::jitsi()->config()->getValue(ConfigFormGUI::JITSI_URL);
+        if(empty($uri_from_config)) $uri_from_config = 'https://meet.jit.si/';
         $uri             = new URI($uri_from_config);
         $tpl->setVariable('JITSI_DOMAIN', $uri->getAuthority());
         $tpl->setVariable('JITSI_DOMAIN_SCHEMA', $uri->getSchema());
