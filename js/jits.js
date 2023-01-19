@@ -69,27 +69,30 @@ var il;
         Jitsi.api = api;
         function init(base_configuration) {
             base_configuration = JSON.parse(base_configuration);
-            console.log(base_configuration);
             var domain = base_configuration['domain'];
             var options = {
                 roomName: base_configuration['roomId'],
                 height: base_configuration['height'],
                 parentNode: document.querySelector(base_configuration['parentNode']),
-                configOverwrite: base_configuration['configOverwrite'],
-                interfaceConfigOverwrite: base_configuration['interfaceConfigOverwrite']
+                configOverwrite: {
+                    ...base_configuration['configOverwrite'],
+                    hideConferenceSubject: true,
+                },
+                interfaceConfigOverwrite: base_configuration['interfaceConfigOverwrite'],
             };
             // @ts-ignore
             var api = new JitsiMeetExternalAPI(domain, options);
-            var participant = base_configuration['participant'];
-            api_wapper = new ApiWrapper(api, participant);
-            api_wapper.setUserName(participant['displayName']);
-            api_wapper.toggleAudio();
-            if (participant['moderator'] === true) {
-                console.log('moderator');
-                api_wapper.enableTileView();
-                api_wapper.setPassword(base_configuration['password']);
-                api_wapper.setRoomName(base_configuration['roomName']);
-            }
+            api.addListener('videoConferenceJoined', () => {
+                var participant = base_configuration['participant'];
+                api_wapper = new ApiWrapper(api, participant);
+                api_wapper.setUserName(participant['displayName']);
+                api_wapper.toggleAudio();
+                if (participant['moderator'] === true) {
+                    api_wapper.enableTileView();
+                    api_wapper.setPassword(base_configuration['password']);
+                    api_wapper.setRoomName(base_configuration['roomName']);
+                }
+            });
         }
         Jitsi.init = init;
     })(Jitsi = il.Jitsi || (il.Jitsi = {}));
