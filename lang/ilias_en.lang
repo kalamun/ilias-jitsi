@@ -27,3 +27,8 @@ settings_settings#:#Settings
 settings_title#:#Title
 config_jitsi_url#:#Jitsi-URL
 config_open_in_tab#:#Open in new Tab
+root_create_xjit#:#Create a Jitsi videocall
+cat_create_xjit#:#Create a Jitsi videocall
+crs_create_xjit#:#Create a Jitsi videocall
+fold_create_xjit#:#Create a Jitsi videocall
+grp_create_xjit#:#Create a Jitsi videocall

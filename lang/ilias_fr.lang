@@ -27,3 +27,8 @@ settings_settings#:#Paramètres
 settings_title#:#Title
 config_jitsi_url#:#Adresse Jitsi
 config_open_in_tab#:#Ouvrir dans un nouvel onglet
+root_create_xjit#:#Créer une Vidéoconférence Jitsi
+cat_create_xjit#:#Créer une Vidéoconférence Jitsi
+crs_create_xjit#:#Créer une Vidéoconférence Jitsi
+fold_create_xjit#:#Créer une Vidéoconférence Jitsi
+grp_create_xjit#:#Créer une Vidéoconférence Jitsi
