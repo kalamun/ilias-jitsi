@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . "/../vendor/autoload.php";
 
 use srag\Plugins\Jitsi\Utils\JitsiTrait;
@@ -15,7 +14,6 @@ use srag\RemovePluginDataConfirm\Jitsi\RepositoryObjectPluginUninstallTrait;
  */
 class ilJitsiPlugin extends ilRepositoryObjectPlugin
 {
-
     use RepositoryObjectPluginUninstallTrait;
     use JitsiTrait;
     const PLUGIN_ID = "xjit";
@@ -26,26 +24,16 @@ class ilJitsiPlugin extends ilRepositoryObjectPlugin
      */
     protected static $instance = null;
 
-
     /**
      * @return self
      */
     public static function getInstance() : self
     {
         if (self::$instance === null) {
-            self::$instance = new self();
+            self::$instance = self;
         }
 
         return self::$instance;
-    }
-
-
-    /**
-     * ilJitsiPlugin constructor
-     */
-    public function __construct()
-    {
-        parent::__construct();
     }
 
 
@@ -75,5 +63,10 @@ class ilJitsiPlugin extends ilRepositoryObjectPlugin
     protected function deleteData()/*: void*/
     {
         self::jitsi()->dropTables();
+    }
+
+    public function allowCopy() : bool
+    {
+        return true;
     }
 }

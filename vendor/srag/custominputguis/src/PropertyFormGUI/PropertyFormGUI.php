@@ -115,7 +115,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
                 throw new PropertyFormGUIException("\$fields needs to be an array!", PropertyFormGUIException::CODE_INVALID_FIELD);
             }
 
-            if ($field[self::PROPERTY_NOT_ADD]) {
+            if (isset($field[self::PROPERTY_NOT_ADD])) {
                 continue;
             }
 
@@ -139,7 +139,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
                 }
             }
 
-            if (is_array($field[self::PROPERTY_SUBITEMS])) {
+            if (isset($field[self::PROPERTY_SUBITEMS]) && is_array($field[self::PROPERTY_SUBITEMS])) {
                 $this->getFields($field[self::PROPERTY_SUBITEMS], $item);
             }
 
@@ -230,7 +230,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
                     $this->storeValue($key, $value);
                 }
 
-                if (is_array($field[self::PROPERTY_SUBITEMS])) {
+                if (isset($field[self::PROPERTY_SUBITEMS]) && is_array($field[self::PROPERTY_SUBITEMS])) {
                     if (!($item instanceof MultiLineInputGUI) && !($item instanceof MultiLineNewInputGUI) && !($item instanceof TabsInputGUI) && !($item instanceof TabsInputGUITab)) {
                         $this->storeFormItems($field[self::PROPERTY_SUBITEMS]);
                     }
@@ -246,7 +246,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
      *
      * @return string
      */
-    public function txt(/*string*/ $key,/*?string*/ $default = null)/*: string*/
+    public function txt(string $key,?string $default = null): string
     {
         if ($default !== null) {
             return self::plugin()->translate($key, static::LANG_MODULE, [], true, "", $default);
@@ -259,7 +259,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
     /**
      * @return bool
      */
-    public function checkInput()/*: bool*/
+    public function checkInput(): bool
     {
         return parent::checkInput();
     }
@@ -268,7 +268,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
     /**
      *
      */
-    protected function initAction()/*: void*/
+    protected function initAction(): void
     {
         $this->setFormAction(self::dic()->ctrl()->getFormAction($this->parent));
     }
@@ -277,7 +277,7 @@ abstract class PropertyFormGUI extends ilPropertyFormGUI
     /**
      * @return bool
      */
-    public function storeForm()/*: bool*/
+    public function storeForm(): bool
     {
         if (!$this->storeFormCheck()) {
             return false;

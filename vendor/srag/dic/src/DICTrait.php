@@ -32,7 +32,7 @@ trait DICTrait
      *
      * @return DICInterface DIC interface
      */
-    protected static final function dic() : DICInterface
+    public static final function dic() : DICInterface
     {
         return DICStatic::dic();
     }
@@ -43,7 +43,7 @@ trait DICTrait
      *
      * @return OutputInterface Output interface
      */
-    protected static final function output() : OutputInterface
+    public static final function output() : OutputInterface
     {
         return DICStatic::output();
     }
@@ -58,7 +58,7 @@ trait DICTrait
      * @throws DICException Class $plugin_class_name not extends ilPlugin!
      * @logs   DEBUG Please implement $plugin_class_name::getInstance()!
      */
-    protected static final function plugin() : PluginInterface
+    public static final function plugin() : PluginInterface
     {
         self::checkPluginClassNameConst();
 
@@ -71,7 +71,7 @@ trait DICTrait
      *
      * @return VersionInterface Version interface
      */
-    protected static final function version() : VersionInterface
+    public static final function version() : VersionInterface
     {
         return DICStatic::version();
     }
@@ -80,7 +80,7 @@ trait DICTrait
     /**
      * @throws DICException Your class needs to implement the PLUGIN_CLASS_NAME constant!
      */
-    private static final function checkPluginClassNameConst()/*: void*/
+    public static final function checkPluginClassNameConst()/*: void*/
     {
         if (!defined("static::PLUGIN_CLASS_NAME") || empty(static::PLUGIN_CLASS_NAME)) {
             throw new DICException("Your class needs to implement the PLUGIN_CLASS_NAME constant!", DICException::CODE_MISSING_CONST_PLUGIN_CLASS_NAME);

@@ -102,7 +102,7 @@ class ilObjJitsiListGUI extends ilObjectPluginListGUI
         $this->setType(ilJitsiPlugin::PLUGIN_ID);
     }
 
-    public function getCommandFrame($a_cmd)
+    public function getCommandFrame(string $a_cmd): string
     {
         if ($a_cmd === ilObjJitsiGUI::CMD_SHOW_CONTENTS && self::jitsi()->config()->getValue(ConfigFormGUI::OPEN_IN_NEW_TAB)) {
             return '_blank';

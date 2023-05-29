@@ -53,7 +53,7 @@ abstract class AbstractRepository
 
             $type = $field[0];
 
-            $default_value = $field[1];
+            $default_value = isset($field[1]) ? $field[1] : false;
 
             switch ($type) {
                 case Config::TYPE_STRING:
