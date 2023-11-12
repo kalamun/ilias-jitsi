@@ -20,6 +20,9 @@ abstract class AbstractILIASDatabaseDetector implements DatabaseInterface
      */
     protected $db;
 
+    public function primaryExistsByFields(string $table_name, array $fields): bool {
+        return false;
+    }
 
     /**
      * AbstractILIASDatabaseDetector constructor
